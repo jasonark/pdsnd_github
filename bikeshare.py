@@ -204,7 +204,7 @@ def user_stats(df):
         print("The most recent birth year is {}.".format(Max_Birth_Year)) # Prints latest birth year
 
         Mode_Birth_Year = int(df["Birth Year"].mode()) # Returns the most common birth year in new variable
-        print("The most common year of birth is {}.".format(Mode_Birth_Year)) # Prints most common birth year
+        print("The most common year of birth is {}.  Original data was filtered out with birth years before 1935 or after 2005".format(Mode_Birth_Year)) # Prints most common birth year
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
