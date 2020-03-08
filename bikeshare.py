@@ -195,7 +195,7 @@ def user_stats(df):
         df1 = df1[~pd.isnull(df1)]  # Removes null values from new dataframe
         Birth_Year = np.array(df1)  # Creates numpy array of new df1 dataframe
         # Only include values in array that are >= 1940 and <= 2000 to filter out erroneous data
-        Birth_Year = Birth_Year[np.logical_and(Birth_Year>=1940,Birth_Year<=2000)]
+        Birth_Year = Birth_Year[np.logical_and(Birth_Year>=1935,Birth_Year<=2005)]
 
         Min_Birth_Year = int(np.min(Birth_Year)) # Returns the earliest birth year in new variable
         print("The earliest birth year is {}.".format(Min_Birth_Year)) # Prints earliest birth year
