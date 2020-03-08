@@ -17,7 +17,11 @@ The script will then enter a loop and ask the user if they want to see additiona
 inputs data that he/she doesn't want to view any more raw data.
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
+bikeshare.py
+.gitignore
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+udacity.com
