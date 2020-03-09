@@ -39,7 +39,7 @@ def get_filters():
             else:
                 print("\nThat's not a valid month\n") # Will print message if invalid month is entered and start over loop
         except ValueError:
-            print("Invalid string") # Will print message if the expected data type isn't entered (string)
+            print("Invalid data type") # Will print message if the expected data type isn't entered (string)
 
     # Get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
