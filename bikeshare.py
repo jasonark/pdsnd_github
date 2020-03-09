@@ -39,7 +39,7 @@ def get_filters():
             else:
                 print("\nThat's not a valid month\n") # Will print message if invalid month is entered and start over loop
         except ValueError:
-            print("Invalid string") # Will print message if the expected data type isn't entered (string)
+            print("Invalid data type") # Will print message if the expected data type isn't entered (string)
 
     # Get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
@@ -204,8 +204,8 @@ def user_stats(df):
         print("The most recent birth year is {}.".format(Max_Birth_Year)) # Prints latest birth year
 
         Mode_Birth_Year = int(df["Birth Year"].mode()) # Returns the most common birth year in new variable
-        print("The most common year of birth is {}.  Original data was filtered out with birth years before 1935 or after 2005".format(Mode_Birth_Year)) # Prints most common birth year
 
+        print("The most common birth year is {}.  Original data was filtered out with birth years before 1935 or after 2005".format(Mode_Birth_Year)) # Prints most common birth year
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
